@@ -13,8 +13,8 @@ Package.onUse(function(api) {
   api.use('templating');
   api.use('underscore');
   api.use('reactive-var');
-  api.use('isotope:isotope');
-  api.use('shcherbin:imagesloaded');
+  api.use('isotope:isotope@2.1.0_1');
+  api.use('shcherbin:imagesloaded@3.1.8');
 
   api.imply('reactive-var');
 
