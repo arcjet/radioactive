@@ -1,7 +1,7 @@
 Package.describe({
   name: 'arcjet:radioactive',
   version: '1.0.0',
-  summary: 'Collection-aware reactivity-driven Isotope implemention for Meteor',
+  summary: 'Collection-aware reactivity-driven Isotope implementation for Meteor',
   git: 'https://github.com/arcjet/radioactive.git',
   documentation: 'README.md'
 });
@@ -22,14 +22,4 @@ Package.onUse(function(api) {
   api.addFiles('radioactive.js', 'client');
   api.addFiles('radioactive-item.html', 'client');
   api.addFiles('radioactive-item.js', 'client');
-});
-
-Package.onTest(function(api) {
-  api.use('ecmascript');
-  api.use('tinytest');
-  api.use('arcjet:radioactive');
-
-  api.addAssets('radioactive-tests.html', 'client');
-  api.addAssets('radioactive-tests.css', 'client');
-  api.addAssets('radioactive-tests.js', 'client');
 });
