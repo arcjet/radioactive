@@ -31,9 +31,11 @@ Template.radioactiveItem.helpers({
 
 Template.radioactiveItem.onRendered(function () {
   var parentData = Template.parentData(1);
+
   this.$('.radioactive-item').imagesLoaded(function () {
     parentData.isotopeInstance.isotope('layout');
   });
+
   Meteor.setTimeout(function () {
     parentData.isotopeInstance.isotope('layout');
   }, 100);

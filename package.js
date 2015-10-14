@@ -1,6 +1,6 @@
 Package.describe({
   name: 'arcjet:radioactive',
-  version: '1.0.1',
+  version: '1.0.2',
   summary: 'Collection-aware reactivity-driven Isotope implementation for Meteor',
   git: 'https://github.com/arcjet/radioactive.git',
   documentation: 'README.md'
