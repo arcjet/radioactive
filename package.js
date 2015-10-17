@@ -13,10 +13,11 @@ Package.onUse(function(api) {
   api.use('templating');
   api.use('underscore');
   api.use('reactive-var');
-  api.use('isotope:isotope@2.1.0_1');
-  api.use('shcherbin:imagesloaded@3.1.8');
+  api.use('manuel:reactivearray');
 
-  api.imply('reactive-var');
+  api.addFiles('lib/get-style-property.js', 'client');
+  api.addFiles('lib/get-size.js', 'client');
+  api.addFiles('lib/imagesloaded.pkgd.js', 'client');
 
   api.addFiles('radioactive.html', 'client');
   api.addFiles('radioactive.js', 'client');
